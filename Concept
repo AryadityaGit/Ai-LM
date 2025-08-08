@@ -1,3 +1,15 @@
+The Core Concept: The Offline-First PWA
+Here's the new workflow:
+When the User is ONLINE (Saving):
+The user provides a URL.
+Your app calls the Vercel serverless function to fetch and clean the article content.
+The function returns the clean HTML/JSON.
+The Key Step: Instead of just displaying the content, your app saves the entire article (title, content, etc.) into a database inside the user's browser (IndexedDB).
+When the User is OFFLINE (Reading):
+The user opens your web app. A Service Worker (a script the browser runs in the background) immediately loads the app's shell (your UI) from a local cache. The app loads even with no internet.
+The app then fetches the list of saved articles directly from the browser's IndexedDB, not from the internet.
+The user can browse and read any of their saved articles in their entirety. All the data is already on their device.
+
 Here is a complete summary of our conversation and the final, consolidated codebase for your AI-powered, offline-first PWA reader.
 This solution uses the "All-in-One Vercel" approach, which is the easiest, most efficient, and completely free method to achieve your goal.
 Summary of the Project
