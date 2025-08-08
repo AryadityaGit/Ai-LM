@@ -1,0 +1,26 @@
+/intelligent-reader/
+├── api/
+│   └── parse.js                # The Serverless Backend
+├── public/
+│   ├── favicon.ico
+│   ├── pwa-192x192.png         # (Create this icon)
+│   └── pwa-512x512.png         # (Create this icon)
+├── src/
+│   ├── components/
+│   │   ├── ui/                 # (Your existing shadcn/ui components)
+│   │   ├── AiControlPanel.jsx
+│   │   ├── ArticleList.jsx
+│   │   ├── ArticleWorkspace.jsx
+│   │   ├── DocumentComposer.jsx
+│   │   └── UrlForm.jsx
+│   ├── lib/
+│   │   └── utils.js
+│   ├── App.css
+│   ├── App.jsx
+│   ├── db.js                   # The Database Setup
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── index.html
+├── package.json
+└── vite.config.js
