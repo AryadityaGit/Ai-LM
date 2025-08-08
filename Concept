@@ -10,3 +10,13 @@ Zero-Cost Architecture:
 The frontend (React app) and the backend (a single serverless function) are both hosted on Vercel's free tier.
 The database is the user's own browser (IndexedDB), costing nothing.
 The deployment process is a simple git push.
+
+Deployment Instructions
+GitHub Repository: Create a new repository on GitHub and push all these files to it.
+Vercel Account: Sign up for a free Vercel account using your GitHub profile.
+Import & Deploy on Vercel:
+On your Vercel dashboard, click "Add New... " -> "Project".
+Select your new GitHub repository.
+Vercel will automatically detect the Vite configuration. You do not need to change any settings. It will correctly identify the /api folder as serverless functions and the rest as a Vite app.
+Click Deploy.
+Done: After a few minutes, your project will be live on a *.vercel.app URL. It will function as a PWA, allowing users to save articles when online and read their entire library when offline.
